@@ -1,0 +1,78 @@
+IFTM – CAMPUS PATROCÍNIO
+CURSO TÉCNICO EM INFORMÁTICA INTEGRADO AO ENSINO MÉDIO
+LABORATÓRIO DE PROGRAMAÇÃO 2
+
+1-NaN significa Not a number Ele é retornado quando uma operação não pode produzir um resultado numérico
+
+2-CSS Inline: <p style="color: red;">Olá!</p>
+
+CSS Interno: <style>
+p {
+    color: red;
+}
+</style>
+
+CSS Externo: <link rel="stylesheet" href="style.css">
+
+O CSS Inline é indicado apenas para alterações rápidas em um único elemento. O CSS Interno é útil quando existe apenas uma página. Já o CSS Externo é o mais recomendado, pois deixa o código organizado e permite reutilizar o mesmo estilo em várias páginas.
+
+3- .card-produto{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: white;
+}
+
+4-As listas ordenadas são utilizadas quando a sequência dos itens é importante. Elas aparecem numeradas.
+
+Ex: <ol>
+    <li>Primeiro</li>
+    <li>Segundo</li>
+    <li>Terceiro</li>
+</ol>
+
+As listas não ordenadas são usadas quando a ordem dos itens não faz diferença. Elas aparecem com marcadores.
+
+Ex: <ul>
+    <li>dudu<li>
+    <li>Mw<li>
+    <li>mc><li>
+</ul>
+
+5-A propriedade display define como um elemento será exibido na página.
+
+block: ocupa toda a largura disponível e inicia em uma nova linha. Exemplo: <div>.
+inline: ocupa apenas o espaço do conteúdo e não aceita largura e altura. Exemplo: <span>.
+inline-block: fica na mesma linha que outros elementos, mas aceita largura e altura definidas.
+
+6-O Box Model é o modelo de caixa utilizado pelo CSS para representar todos os elementos da página.
+Da parte mais interna para a mais externa:
+
+Content: conteúdo do elemento.
+Padding: espaço entre o conteúdo e a borda.
+Border: borda que envolve o elemento.
+Margin: espaço externo que separa um elemento dos outros.
+
+7-As tags semânticas servem para organizar melhor a estrutura da página, tornando o código mais fácil de entender e melhorando a acessibilidade e o SEO.
+
+Ex: <header>
+    <h1>Meu Site</h1>
+</header>
+
+<section>
+    <p>Conteúdo principal.</p>
+</section>
+
+<article>
+    <h2>Notícia</h2>
+</article>
+
+<footer>
+    Todos os direitos reservados.
+</footer>
+
+8-O atributo target="_blank" faz com que o link seja aberto em uma nova aba do navegador.
+
+Ex:<a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a>
