@@ -2,77 +2,222 @@ IFTM – CAMPUS PATROCÍNIO
 CURSO TÉCNICO EM INFORMÁTICA INTEGRADO AO ENSINO MÉDIO
 LABORATÓRIO DE PROGRAMAÇÃO 2
 
-1-NaN significa Not a number Ele é retornado quando uma operação não pode produzir um resultado numérico
+1) O que é o retorno NaN em Javascript? Cite um tipo de condição em que este tipo pode
+ser gerado:
+É uma espécie de erro, no qual no Javascript é representado por undefined. Quando você cria um cogigo que não é possível acessar a informação desejada.
+2)É possível adicionar uma configuração CSS de múltiplas formas em um código HTML:
+Sim
+É possível inserirmos uma configuração CSS dentro de um elemento:
+Outra forma de incluirmos o CSS é adicionarmos a tag no de nossa página e declarar as propriedades para os elementos dentro dessa tag: h2{font-size};
+Podemos criar uma pagina de CSS e linkar essa pagina em nosso HTML fazendo com que toda a pagina sofra as alterações feita.
+Em geral o que muda é a facilidade de criação, umas sendo mais fáceis e rápidas que outras.
+3)Escreva as regras CSS para estilizar uma div com a classe .card-produto com as seguintes exigências: Largura fixa de 300px e centralizada horizontalmente na página. Espaçamento interno (padding) de 20px. Bordas arredondadas em 12px e uma borda sólida de 1px na cor cinza claro (#ddd).Cor de fundo branca:
+3. Escreva as regras CSS para estilizar uma div com a classe .card-produto com as
+seguintes exigências: Largura fixa de 300px e centralizada horizontalmente na página.
+Espaçamento interno (padding) de 20px. Bordas arredondadas em 12px e uma borda
+sólida de 1px na cor cinza claro (#ddd).Cor de fundo branca.
+4) Diferencie as listas ordenadas () das listas não ordenadas (). Crie um exemplo de cada:
+Na lista ordenada, o que você adicionar ira ficar com uma contagem nos termos:
+EX:1)Arroz
+2)Feijão
+3)Carne
+Na lista não ordenada os termos ficam em pontos não importando a ordem.
+EX:·Arroz
+·Feijão
+·Carne
+5)O que significa a propriedade display no CSS? Compare o comportamento de block,
+inline e inline-block:
+Define o comportamento de exibição de um elemento e como ele se organiza na página.
+BLOCK:O elemento ocupa toda a largura disponível da tela e força uma quebra de linha
+INLINE:O elemento fica na mesma linha que os outros, mas não aceita definições de largura ou altura
+INLINE-block:Fica na mesma linha como o inline, mas permite ajustar largura, altura e margens como um bloco
+6)Explique o que é o Box Model no CSS e descreva suas partes de dentro para fora.
+É uma espécie de caixa, que define um padrão pro seu código de css.
+Aonde:
+No meio fica o conteúdo.
+Padding é o espaçamento entre os elementos da pagina.
+Border Fica ao redor do preenchimento.
+Margin: define o espaçamento dos elementos em relação ao resto da pagina
+7)Qual é a função das tags semânticas no HTML5, como , , e
+? Dê exemplos de uso.
+cria o cabeçalho
+cria uma seção dentro do seu código
+Define um conteúdo expecífico
+cria um rodapé
+8)Explique o que é e para que serve o atributo target="_blank" em um link. Quais cuidados de segurança devem ser tomados ao utilizá-lo?
+o atributo target="_blank" serve para fazer o link abrir em uma nova aba ou janela do navegador, sem fechar a pagina atual onde o usuario esta.
+o cuidado de seguranca e que o site que foi aberto ganha acesso parcial a pagina antiga por meio de um comando de javascript chamado window.opener. isso permite que um site malicioso troque a sua pagina antiga por uma falsa para tentar roubar senhas (ataque de phishing).
+para evitar isso, basta colocar o atributo rel="noopener noreferrer" junto no link.
+9)O que é a propriedade flex no CSS e como ela é usada?
+Usada no css, o flex é usado para definir uma div que você ira redirecionar dentro do seu código Html.Podendo assim o usuário coloca-la aonde quiser na pagina.
 
-2-CSS Inline: <p style="color: red;">Olá!</p>
+display: flex;
+justify-content: space-between;
+align-items: center;
+10) Faça a leitura de um vetor de tamanho 5 de notas. Escreva um código que utilize um
+laço de repetição (for ou for...of) para percorrer o array, calcular e exibir no console a
+soma total e a média aritmética das notas.
+let notas = [];
+let soma = 0;
+for(let i = 0; i < 5; i++){
+notas[i] = Number(prom
 
-CSS Interno: <style>
-p {
-    color: red;
 }
-</style>
 
-CSS Externo: <link rel="stylesheet" href="style.css">
-
-O CSS Inline é indicado apenas para alterações rápidas em um único elemento. O CSS Interno é útil quando existe apenas uma página. Já o CSS Externo é o mais recomendado, pois deixa o código organizado e permite reutilizar o mesmo estilo em várias páginas.
-
-3- .card-produto{
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    background-color: white;
+for(let nota of notas){
+soma += nota;
 }
 
-4-As listas ordenadas são utilizadas quando a sequência dos itens é importante. Elas aparecem numeradas.
+let media = soma / 5;
 
-Ex: <ol>
-    <li>Primeiro</li>
-    <li>Segundo</li>
-    <li>Terceiro</li>
-</ol>
+console.log("Soma total:", soma);
+console.log("Média:", media);
 
-As listas não ordenadas são usadas quando a ordem dos itens não faz diferença. Elas aparecem com marcadores.
+11) Crie um objeto com informações de um produto (nome, preco, emEstoque). Se em Estoque for true, exiba "Produto disponível"; caso contrário, "Produto indisponível".
 
-Ex: <ul>
-    <li>dudu<li>
-    <li>Mw<li>
-    <li>mc><li>
-</ul>
+let produto = {
+nome: "Notebook",
+preco: 3500,
+emEstoque: true
+};
 
-5-A propriedade display define como um elemento será exibido na página.
+if(produto.emEstoque){
+console.log("Produto disponível");
+}else{
+console.log("Produto indisponível");
+}
 
-block: ocupa toda a largura disponível e inicia em uma nova linha. Exemplo: <div>.
-inline: ocupa apenas o espaço do conteúdo e não aceita largura e altura. Exemplo: <span>.
-inline-block: fica na mesma linha que outros elementos, mas aceita largura e altura definidas.
+12) Crie um objeto pessoa com os atributos nome, peso, altura e temperatura. Faça uma saída que verifica se essa pessoa está ou não com febre.
 
-6-O Box Model é o modelo de caixa utilizado pelo CSS para representar todos os elementos da página.
-Da parte mais interna para a mais externa:
+let pessoa = {
+nome: "Vitor",
+peso: 67,
+altura: 1.69,
+temperatura: 38
+};
 
-Content: conteúdo do elemento.
-Padding: espaço entre o conteúdo e a borda.
-Border: borda que envolve o elemento.
-Margin: espaço externo que separa um elemento dos outros.
+if(pessoa.temperatura >= 37.8){
+console.log("A pessoa está com febre.");
+}else{
+console.log("A pessoa não está com febre.");
+}
 
-7-As tags semânticas servem para organizar melhor a estrutura da página, tornando o código mais fácil de entender e melhorando a acessibilidade e o SEO.
+13) Crie 2 objetos do tipo livro e peça ao usuário para preenche-los. Depois, imprima na tela o livro com autoria mais antiga, o livro com mais páginas e o livro com autor brasileiro(caso haja).
 
-Ex: <header>
-    <h1>Meu Site</h1>
-</header>
+let livro1 = {
+nome: prompt("Digite o nome do primeiro livro:"),
+autor: prompt("Digite o autor do primeiro livro:"),
+ano: Number(prompt("Digite o ano de nascimento do autor:")),
+paginas: Number(prompt("Digite o número de páginas:")),
+brasileiro: prompt("O autor é brasileiro? (sim ou não)")
+};
 
-<section>
-    <p>Conteúdo principal.</p>
-</section>
+let livro2 = {
+nome: prompt("Digite o nome do segundo livro:"),
+autor: prompt("Digite o autor do segundo livro:"),
+ano: Number(prompt("Digite o ano de nascimento do autor:")),
+paginas: Number(prompt("Digite o número de páginas:")),
+brasileiro: prompt("O autor é brasileiro? (sim ou não)")
+};
 
-<article>
-    <h2>Notícia</h2>
-</article>
+if(livro1.ano < livro2.ano){
+console.log("Livro com autoria mais antiga:", livro1.nome);
+}else{
+console.log("Livro com autoria mais antiga:", livro2.nome);
+}
 
-<footer>
-    Todos os direitos reservados.
-</footer>
+if(livro1.paginas > livro2.paginas){
+console.log("Livro com mais páginas:", livro1.nome);
+}else{
+console.log("Livro com mais páginas:", livro2.nome);
+}
 
-8-O atributo target="_blank" faz com que o link seja aberto em uma nova aba do navegador.
+if(livro1.brasileiro.toLowerCase() == "sim"){
+console.log("Livro com autor brasileiro:", livro1.nome);
+}
 
-Ex:<a href="https://google.com" target="_blank" rel="noopener noreferrer">Google</a>
+if(livro2.brasileiro.toLowerCase() == "sim"){
+console.log("Livro com autor brasileiro:", livro2.nome);
+}
+
+if(livro1.brasileiro.toLowerCase() != "sim" && livro2.brasileiro.toLowerCase() != "sim"){
+console.log("Não há autor brasileiro.");
+}
+14) Crie um objeto filme que receba do usuário seu nome e classificação. Em seguida, imprima os dados desse filme, informando sua faixa etária classificatória.
+
+let filme = {
+nome: prompt("Digite o nome do filme:"),
+classificacao: Number(prompt("Digite a classificação do filme:"))
+};
+
+console.log("Nome:", filme.nome);
+console.log("Classificação:", filme.classificacao);
+
+if(filme.classificacao == 0){
+console.log("Faixa etária: Livre");
+}else if(filme.classificacao == 10){
+console.log("Faixa etária: 10 anos");
+}else if(filme.classificacao == 12){
+console.log("Faixa etária: 12 anos");
+}else if(filme.classificacao == 14){
+console.log("Faixa etária: 14 anos");
+}else if(filme.classificacao == 16){
+console.log("Faixa etária: 16 anos");
+}else if(filme.classificacao == 18){
+console.log("Faixa etária: 18 anos");
+}else{
+console.log("Classificação inválida.");
+}
+
+(15) quais as diferencas entre criar uma variavel do tipo const, var e let? cite exemplos.
+var e o jeito antigo de criar variavel, e meio baguncado porque deixa voce recriar a mesma variavel sem querer.
+let e o jeito moderno para coisas que mudam de valor, tipo um contador.
+const e para coisas fixas que voce nao quer que ninguem mude o valor.
+
+exemplos:
+var nome = "ana";
+let idade = 20;
+idade = 21;
+const cpf = "123.456.789-00";
+
+(16) responda no console o que sera impresso ou qual erro ocorrera.
+voce nao mandou o codigo dessa questao, mas no geral:
+se tentar mudar o valor de uma variavel const, o sistema da o erro typeerror.
+se tentar usar uma variavel let ou const antes de criar ela, da o erro referenceerror.
+
+(17) qual a diferenca entre javascript e java?
+java e uma linguagem pesada e seria, usada para criar programas de computador grandes, bancos e aplicativos android.
+javascript e a linguagem leve usada para dar vida, cliques e animacoes para os sites da internet.
+
+(18) qual a diferenca entre == e === no javascript? de exemplos praticos.
+== e a comparacao de boa, ela olha so se o valor e parecido e finge que o texto "5" e igual ao numero 5.
+=== e a comparacao certinha, ela exige que o valor e o tipo de dado sejam identicos.
+
+exemplos:
+5 == "5" da verdadeiro.
+5 === "5" da falso porque um e numero e o outro e texto.
+
+(19) o que sao operadores logicos (&&, ||, !) e como eles podem ser usados em condicionais? exemplifique.
+&& significa "E": so passa se todas as condicoes forem verdadeiras.
+|| significa "OU": passa se pelo menos uma condicao for verdadeira.
+! significa "NAO": inverte as coisas, o que e verdadeiro vira falso.
+
+exemplo:
+if (temdinheiro === true && temtempo === true) { console.log("vou viajar"); }
+
+(20) e possivel adicionar novas propriedades a um objeto depois de criado? como?
+sim, e super facil! e so colocar o nome do objeto, um ponto, o nome da coisa nova e o valor.
+
+exemplo:
+let carro = { marca: "fiat" };
+carro.cor = "vermelho";
+
+(21) qual a diferenca entre null e undefined no javascript?
+undefined e quando o javascript cria uma variavel mas voce esqueceu de colocar valor nela.
+null e quando voce limpa o valor da variavel de proposito para mostrar que ela esta vazia.
+
+(22) o que e um objeto em javascript e como ele e declarado? de um exemplo basico.
+objeto e como uma caixa cheia de informacoes sobre uma coisa so (tipo uma pessoa ou um produto).
+
+exemplo:
+let usuario = { nome: "lucas", idade: 25 };
